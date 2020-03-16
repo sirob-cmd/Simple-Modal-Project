@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #444;
+  overflow: hidden;
+}
+
+img {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.main-img img {
+  border: none;
+  display: block;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  margin: 1rem auto;
+  width: 50%;
+  height: 50%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.Imgwrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Imgwrapper > img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1700px) {
+  .main-img img {
+    max-width: 45%;
+    max-height: 45%;
+  }
+  .Imgwrapper {
+    bottom: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
